@@ -1,0 +1,18 @@
+.todo-list {
+  list-style: none;
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  .item-done {
+    position: relative;
+
+    &::before {
+      content: '✅';
+      position: absolute;
+      left: -20px;
+      top: 0;
+    }
+  }
+}
