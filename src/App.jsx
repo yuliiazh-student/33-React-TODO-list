@@ -51,7 +51,7 @@ function App() {
   }
 
   const fetchTodos = async () => {
-    const resp = await fetch('/mocks/todos.json')
+    const resp = await fetch('mocks/todos.json')
     const data = await resp.json()
     setTodoList(data)
   }
